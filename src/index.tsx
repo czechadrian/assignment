@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { Provider } from "react-redux";
+import { applyMiddleware, createStore, compose } from "redux";
+import loggerMiddleware from "./middleware/logger";
+import thunkMiddleware from "redux-thunk";
+import rootReducer from "./app/reducers";
+
+const middlewares = applyMiddleware(loggerMiddleware, thunkMiddleware);
+const composeEnv =
+  (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+const store = createStore(rootReducer, undefined, composeEnv(middlewares));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
