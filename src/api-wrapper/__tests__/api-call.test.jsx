@@ -1,4 +1,4 @@
-import { apiGet } from "../apiCall";
+import { apiGet } from "../api-call";
 import axios from "axios";
 
 jest.mock("axios");

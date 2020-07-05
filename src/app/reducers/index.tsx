@@ -1,15 +1,15 @@
-import { initialState, TComments, comments } from "./comments";
+import { data, initialState, TComments } from "./comments";
 import { combineReducers } from "redux";
 
 export interface TRootState {
-  comments: TComments;
+  data: TComments;
 }
 export const TRootStateInitial: TRootState = {
-  comments: initialState,
+  data: initialState,
 };
 
 const rootReducer = combineReducers<TRootState>({
-  comments,
+  data,
 });
 
 export default rootReducer;

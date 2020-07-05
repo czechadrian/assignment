@@ -1,5 +1,5 @@
-import { apiGet } from "../apiCall";
-import { getComments } from "../getComments";
+import { apiGet } from "../api-call";
+import { getComments } from "../get-comments";
 import { PARAMS_LIMIT, URL_COMMENTS } from "../../app/constants";
 
 jest.mock("../apiCall", () => {

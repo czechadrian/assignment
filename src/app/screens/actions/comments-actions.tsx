@@ -1,8 +1,8 @@
 import { ActionType, createAction } from "typesafe-actions";
 import { ThunkAction } from "redux-thunk";
-import { TRootState } from "../reducers";
-import { getComments } from "../../api-wrapper/getComments";
-import { TComments } from "../reducers/comments";
+import { TRootState } from "../../reducers";
+import { getComments } from "../../../api-wrapper/get-comments";
+import { TComments } from "../../reducers/comments";
 
 export const getCommentsInitAction = createAction("data/FETCH_INIT")();
 export const getCommentsSuccessAction = createAction("data/FETCH_SUCCESS")<
@@ -33,8 +33,7 @@ export const fetchComments: TFetchCommentsAction = () => (dispatch) => {
   dispatch(getCommentsInitAction());
   return getComments()
     .then((payload) => {
-      console.log(payload);
-      return dispatch(getCommentsSuccessAction({ comments: payload.comments }));
+      return dispatch(getCommentsSuccessAction({ comments: payload }));
     })
     .catch(() => {
       dispatch(getCommentsFailureAction());

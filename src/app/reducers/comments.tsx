@@ -6,7 +6,7 @@ import {
   getCommentsInitAction,
   getCommentsSuccessAction,
   TGetCommentsActions,
-} from "../screens/comments-actions";
+} from "../screens/actions/comments-actions";
 
 export interface TComment {
   name: string;
@@ -21,7 +21,7 @@ export const initialState: TComments = {
   fetchingStatus: TFetchingStatus.Defined,
 };
 
-export const comments = createReducer<TComments, TGetCommentsActions>(
+export const data = createReducer<TComments, TGetCommentsActions>(
   initialState
 )
   .handleAction(getCommentsInitAction, (state) =>
