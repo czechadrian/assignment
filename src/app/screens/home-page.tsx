@@ -8,6 +8,7 @@ import FolderIcon from "@material-ui/icons/Folder";
 import HomeIcon from "@material-ui/icons/Home";
 import { useHistory } from "react-router-dom";
 import { BottomNavigationStyled, HeaderWithBorder } from "../components/header";
+import { selectCommentAction } from "./actions/selected-comments-actions";
 
 function HomePage() {
   const [value, setValue] = useState<number>(0);
@@ -41,7 +42,11 @@ function HomePage() {
           />
         </BottomNavigationStyled>
       </HeaderWithBorder>
-      <TableComponent rows={comments} />
+      <TableComponent
+        rows={comments}
+        homePageTable={true}
+        action={selectCommentAction}
+      />
     </main>
   );
 }
