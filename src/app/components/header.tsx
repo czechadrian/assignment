@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { BottomNavigation } from "@material-ui/core";
 
 export const HeaderWithBorder = styled.header`
+  width: 80%;
   margin: 0 10% 5%;
   border-bottom: 1px solid lightgray;
 `;

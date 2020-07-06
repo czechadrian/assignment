@@ -16,7 +16,6 @@ function SelectedCommentsPage() {
   const selectedComments = useTypedSelector((state) =>
     state.data.comments.filter((comment) => comment.selected)
   );
-  console.log(selectedComments);
   return (
     <main>
       <HeaderWithBorder>

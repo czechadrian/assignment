@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { fetchComments } from "./app/screens/actions/comments-actions";
+import { fetchComments } from "./app/screens/actions/fetch-comments-actions";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./app/screens/home-page";
 import AddComment from "./app/screens/add-comment";

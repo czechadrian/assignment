@@ -8,7 +8,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 
 function TableComponent({ rows, homePageTable, action }: any) {
   const TableCellAlignedRight = styled(TableCell)`
@@ -69,9 +69,7 @@ function TableComponent({ rows, homePageTable, action }: any) {
                     variant="contained"
                     color="primary"
                     disabled={isButtonDisabled(row.selected)}
-                    onClick={() =>
-                      dispatch(action({ id: row.id }))
-                    }
+                    onClick={() => dispatch(action({ id: row.id }))}
                   >
                     {buttonText(row.selected)}
                   </Button>

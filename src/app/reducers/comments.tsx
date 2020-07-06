@@ -1,17 +1,18 @@
-import { createReducer } from "typesafe-actions";
+import {createReducer} from "typesafe-actions";
 import produce from "immer";
-import { TFetchingStatus } from "../constants";
+import {TFetchingStatus} from "../constants";
 import {
-  getCommentsFailureAction,
-  getCommentsInitAction,
-  getCommentsSuccessAction,
-  TGetCommentsActions,
-} from "../screens/actions/comments-actions";
+    getCommentsFailureAction,
+    getCommentsInitAction,
+    getCommentsSuccessAction,
+    TGetCommentsActions,
+} from "../screens/actions/fetch-comments-actions";
 import {
-  removeSelectedCommentAction,
-  selectCommentAction,
-  TSelectedCommentActions,
+    removeSelectedCommentAction,
+    selectCommentAction,
+    TSelectedCommentActions,
 } from "../screens/actions/selected-comments-actions";
+import {addCommentAction, TAddCommentAction} from "../screens/actions/add-comment-action";
 
 export interface TComment {
   name: string;
@@ -31,7 +32,10 @@ export const initialState: TComments = {
   fetchingStatus: TFetchingStatus.Defined,
 };
 
-type TCommentActions = TGetCommentsActions | TSelectedCommentActions;
+type TCommentActions =
+  | TGetCommentsActions
+  | TSelectedCommentActions
+  | TAddCommentAction;
 
 export const data = createReducer<TComments, TCommentActions>(initialState)
   .handleAction(getCommentsInitAction, (state) =>
@@ -67,5 +71,10 @@ export const data = createReducer<TComments, TCommentActions>(initialState)
           comment.selected = false;
         }
       });
+    })
+  )
+  .handleAction(addCommentAction, (state, action) =>
+    produce(state, (draftState) => {
+      draftState.comments.push(action.payload);
     })
   );
