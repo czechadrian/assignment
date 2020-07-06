@@ -2,7 +2,7 @@ import { apiGet } from "../api-call";
 import { getComments } from "../get-comments";
 import { PARAMS_LIMIT, URL_COMMENTS } from "../../app/constants";
 
-jest.mock("../apiCall", () => {
+jest.mock("../api-call", () => {
   return {
     apiGet: jest.fn(),
   };

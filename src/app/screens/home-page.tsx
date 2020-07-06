@@ -13,10 +13,10 @@ import { selectCommentAction } from "./actions/selected-comments-actions";
 function HomePage() {
   const [value, setValue] = useState<number>(0);
   const useTypedSelector: TypedUseSelectorHook<TRootState> = useSelector;
-  const { comments } = useTypedSelector((state) => state.data);
+  const comments = useTypedSelector((state) => state.data.comments);
   let history = useHistory();
 
-  if (comments.length === 0 || comments === []) {
+  if (comments === [] || comments.length === 0) {
     return <>Loading....</>;
   }
 

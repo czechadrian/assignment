@@ -39,7 +39,6 @@ function TableComponent({ rows, homePageTable, action }: any) {
   const isButtonDisabled = (selected: boolean) => {
     return homePageTable ? selected : !selected;
   };
-
   return (
     <TableWrapper>
       <TableContainer component={Paper}>

@@ -7,6 +7,7 @@ import { applyMiddleware, createStore, compose } from "redux";
 import loggerMiddleware from "./middleware/logger";
 import thunkMiddleware from "redux-thunk";
 import rootReducer from "./app/reducers";
+import "./index.css";
 
 const middlewares = applyMiddleware(loggerMiddleware, thunkMiddleware);
 const composeEnv =

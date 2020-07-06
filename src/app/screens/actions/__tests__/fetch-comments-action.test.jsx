@@ -2,32 +2,10 @@ import { getComments } from "../../../../api-wrapper/get-comments";
 import { fetchComments } from "../fetch-comments-actions";
 import { initialState } from "../../../reducers/comments";
 import { TFetchingStatus } from "../../../constants";
-
+const payload = require("../../../../api-wrapper/test-helper/comments.data");
 jest.mock("../../../../api-wrapper/get-comments");
 
 describe("fetch comments actions", () => {
-  const payload = {
-    comments: [
-      {
-        postId: 1,
-        id: 1,
-        name: "id labore ex et quam laborum",
-        email: "Eliseo@gardner.biz",
-        body:
-          "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
-        selected: true,
-      },
-      {
-        postId: 1,
-        id: 2,
-        name: "quo vero reiciendis velit similique earum",
-        email: "Jayne_Kuhic@sydney.com",
-        body:
-          "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
-        selected: false,
-      },
-    ],
-  };
   it("should dispatch init and success actions", async () => {
     const dispatchStub = jest.fn();
     const state = {
