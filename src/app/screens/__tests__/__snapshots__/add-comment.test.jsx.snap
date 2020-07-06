@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddComment should match snapshot AddComment component 1`] = `
+.c1 {
+  width: 80%;
+  margin: 0 10% 5%;
+  border-bottom: 1px solid lightgray;
+}
+
+.c2:last-child {
+  margin-bottom: 2.5%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: black;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.c6 {
+  background: #2196f3;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  -webkit-letter-spacing: 10px;
+  -moz-letter-spacing: 10px;
+  -ms-letter-spacing: 10px;
+  letter-spacing: 10px;
+}
+
+.c4 {
+  width: 500px;
+}
+
+<main>
+  <section
+    className="c0"
+  >
+    <header
+      className="c1"
+    >
+      <div
+        className="MuiBottomNavigation-root c2"
+      >
+        <button
+          className="MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiBottomNavigationAction-wrapper"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+              />
+            </svg>
+            <span
+              className="MuiBottomNavigationAction-label Mui-selected"
+            >
+              Homepage
+            </span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <form
+      className="c3"
+      onSubmit={[Function]}
+    >
+      <div
+        className="c4"
+      >
+        <label
+          className="c5"
+        >
+          Name
+        </label>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline controller"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c4"
+      >
+        <label
+          className="c5"
+        >
+          Email
+        </label>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline controller"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c4"
+      >
+        <label
+          className="c5"
+        >
+          Text
+        </label>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline controller"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <input
+        className="c6"
+        type="submit"
+        value="Add New Comment"
+      />
+    </form>
+  </section>
+</main>
+`;

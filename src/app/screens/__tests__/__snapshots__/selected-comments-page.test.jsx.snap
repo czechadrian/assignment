@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectedCommentsPage should match snapshot HomePage component 1`] = `
+.c0 {
+  width: 80%;
+  margin: 0 10% 5%;
+  border-bottom: 1px solid lightgray;
+}
+
+.c1:last-child {
+  margin-bottom: 2.5%;
+}
+
+.c4 {
+  align: right;
+}
+
+.c3 {
+  aria-label: "simple table";
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 10% 0;
+}
+
+<main>
+  <header
+    className="c0"
+  >
+    <div
+      className="MuiBottomNavigation-root c1"
+    >
+      <button
+        className="MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiBottomNavigationAction-wrapper"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+            />
+          </svg>
+          <span
+            className="MuiBottomNavigationAction-label Mui-selected"
+          >
+            Homepage
+          </span>
+        </span>
+      </button>
+    </div>
+  </header>
+  <main
+    className="c2"
+  >
+    <div
+      className="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <table
+        className="MuiTable-root c3"
+        role={null}
+      >
+        <thead
+          className="MuiTableHead-root"
+          role={null}
+        >
+          <tr
+            className="MuiTableRow-root MuiTableRow-head"
+            role={null}
+          >
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head c4"
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head c4"
+              scope="col"
+            >
+              E-mail
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head c4"
+              scope="col"
+            >
+              First 20 characters
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head c4"
+              scope="col"
+            >
+              Add/Remove to Selected
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="MuiTableBody-root"
+          role={null}
+        >
+          <tr
+            className="MuiTableRow-root"
+            role={null}
+          >
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body"
+              role="cell"
+              scope="row"
+            >
+              id labore ex et quam laborum
+            </th>
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body c4"
+            >
+              Eliseo@gardner.biz
+            </td>
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body c4"
+            >
+              laudantium enim quas
+            </td>
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body c4"
+            >
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  Remove
+                </span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</main>
+`;
